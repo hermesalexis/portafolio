@@ -6,19 +6,22 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/93b0596f2d.js"></script>
+
 </head>
 <body>
 
   <div class="home-wrapper">
     <header>
        <nav>
-           <a href="#YO">YO</a>
-           <a href="#Perfil">Perfil</a>
-           <a href="#Habilidades">Habilidades</a>
+           <a href="#home">HOME</a>
+           <a href="#yo">YO</a>
+           <a href="#perfil">Perfil</a>
+           <a href="#habilidades">Habilidades</a>
        </nav>
     </header>   
     
-    <div class="container-home">
+    <div class="container-home" id="home">
         <img src="img/yo.jpg" alt="fondo_hermes">
         <div id="home-text">
            <h1>HERMES</h1>
@@ -29,10 +32,10 @@
   </div>
 
   <section id="yo">
-
+       
       <img src="img/yo3.png" alt="imagen_hermes" class="imagen-yo">    
       
-      <div class="descripcion-imagen-yo">
+      <div class="descripcion">
           <h1>¿Quién soy Yo?</h1>
            <p>
               Mi nombre es HERMES así como Hermes el mensajero de los dioses. Soy Ingeniero Electrónico, pero mi verdadera pasión es el sofware. Me gusta hacer ejercio, los animales y la buena música.
@@ -43,7 +46,46 @@
 
   </section>
 
+  <section id="perfil">
+      <img src="img/perfil.jpg" alt="perfil_hermes" class="imagen-perfil">
+      <div id ="descripcion-perfil" class="descripcion">
+          <h1>HERMES TRIMETISTRO</h1>
+          <p><span>Nombre Completo:</span> Hermes Galvis Mejía</p>
+          <p><span>Fecha de Nacimiento:</span> 24 de Agosto de 1988</p>
+          <p><span>Ciudad Natal:</span> Marinilla</p>
+          <p><span>País:</span> Colombia</p>
+      </div>
+  </section>
 
+   <section id="habilidades" class="container">
+       <h2>HABILIDADES</h2>
+       <div class="box">
+           <img src="img/hardware.png" alt="hardware">
+           <h3>Hardware</h3>
+           <p>Si tienes algún proyecto relacionado con sistemas embebidos puedes
+           contactarme.</p>
+       </div>
+       <div class="box">
+           <img src="img/software.jpg" alt="Software">
+           <h3>Software</h3>
+           <p>Actualmente hago parte de Make it Real, soy aprendiz del curso FULL STACK WEB DEVELPER</p>
+       </div>
+       <div class="box">
+           <img src="img/negocios.jpg" alt="Negocios">
+           <h3>Negocios</h3>
+           <p>Tengo experiencia negociando con empresas chinas, soy importador a pequeña escala de productos</p>
+       </div>
+   </section>   
+
+   <footer>
+      <div class="redes-sociales">
+        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>   
+      </div>
+       
+
+   </footer>
     
    
 

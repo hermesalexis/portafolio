@@ -8,7 +8,7 @@ body{
 }
 
 .home-wrapper{
-	background: linear-gradient(rgba(0 , 0 , 0 , 0.6) , rgba(0 , 0 , 0 , 0.6)) , url('../img/fondo0.jpg');
+	background: linear-gradient(rgba(0 , 0 , 0 , 0.6) , rgba(0 , 0 , 0 , 0.6)) , url('../img/fondo0.jpg') no-repeat center top;
 	background-size: cover;
 	color: white;
 }
@@ -93,17 +93,76 @@ header nav{
 #yo{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-.descripcion-imagen-yo{
+.descripcion h2{
+	text-align: center;
+}
+.descripcion{
 	text-align: justify;
 
 }
 
 /**************/
+/*ESTILO SECCIÓN PEFIL*/
+#perfil{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+section #descripcion-perfil{
+	margin-left: 20px;
+}
+
+section p span{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*habilidades*/
+#habilidades h2{
+	text-align: center;
+}
 
 
+#habilidades .box{
+	display:inline-block;
+	text-align: center;
+	width: 33%;
+	padding: 10px;
+}
+
+/*footer*/
+
+footer{
+  position: relative;
+  background-color: black;
+  height: 100px;
+  padding: 50px;
+}
+
+footer .redes-sociales{
+   position:absolute;
+   display: inline-block;
+   left: 400px;
+  
+
+}
+
+footer .redes-sociales a{
+	color:white;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
 
 /*ESTILOS PARA MÓVIL*/
 @media(max-width: 400px){
@@ -129,12 +188,12 @@ header nav{
 	 	margin-right: 5px;
 	 	padding: 5px 10px;
 	 	border-radius: 5px;
-	 	background-color: rgba(0 , 0 , 0 , 0.5);
+	 	background-color: rgba(255, 255 , 255 , 0);
      }
 
      header nav a:hover{
      	width: 100%;
-     	text-align: center;;
+     	text-align: center;
      	background-color: red;
      }
 
@@ -164,7 +223,11 @@ header nav{
 		-webkit-flex-direction:column;
 	}
 
-	section .imagen-yo{
+    #perfil{
+    	flex-direction: column;
+    	-webkit-flex-direction:column;
+    }
+	section .imagen-yo, section .imagen-perfil{
 		order: 1;
 	}
 }
