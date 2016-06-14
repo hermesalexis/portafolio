@@ -138,19 +138,18 @@ section p span{
 /*footer*/
 
 footer{
-  position: relative;
+  position:relative;
   background-color: black;
-  height: 100px;
-  padding: 50px;
-}
-
-footer .redes-sociales{
-   position:absolute;
-   display: inline-block;
-   left: 400px;
-  
+  height: 150px;
 
 }
+
+.redes-sociales{
+  position: absolute;
+  left: 400px;
+}
+
+
 
 footer .redes-sociales a{
 	color:white;
@@ -162,6 +161,21 @@ footer .redes-sociales a{
 	height: 50px;
 	width: 50px;
 	margin-right: 10px;
+
+}
+
+footer p{
+	color: white;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	font-size: 25px;
+	position:absolute;
+	right: 300px;
+	bottom: 20px;
+	
+
+
 }
 
 /*ESTILOS PARA MÓVIL*/
