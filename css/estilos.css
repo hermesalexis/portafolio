@@ -8,7 +8,7 @@ body{
 }
 
 .home-wrapper{
-	background: linear-gradient(rgba(0 , 0 , 0 , 0.6) , rgba(0 , 0 , 0 , 0.6)) , url('../img/fondo0.jpg');
+	background: linear-gradient(rgba(0 , 0 , 0 , 0.6) , rgba(0 , 0 , 0 , 0.6)) , url('../img/fondo0.jpg') no-repeat center top;
 	background-size: cover;
 	color: white;
 }
@@ -17,7 +17,7 @@ header{
 	position: fixed;
 	padding: 15px 0;
 	width: 100%;
-	background-color: rgba(0 , 0 , 0 , 0.7);
+	background-color: rgba(0 , 0 , 0 , 1);
 
 }
 
@@ -58,7 +58,9 @@ header nav{
 	width: 200px;
     height: 200px;
     margin: 100px 0px 0px 0px;
-    border: 7px solid white;  
+    border: 7px solid white;
+
+    /*background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border-radius: 20px;
 
 }
@@ -93,23 +95,97 @@ header nav{
 #yo{
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
 }
 
-.descripcion-imagen-yo{
+.descripcion h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.descripcion{
 	text-align: justify;
 
 }
 
 /**************/
+/*ESTILO SECCIÓN PEFIL*/
+#perfil{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+section #descripcion-perfil{
+	margin-left: 20px;
+}
+
+section p span{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/*habilidades*/
+.habilidades h2{
+	text-align: center;
+}
+
+#habilidades{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 
+}
+#habilidades .box{
+	text-align: center;
+	width: 33%;
+	padding: 10px;
+}
+
+/*footer*/
+
+footer{
+  /*position:relative;*/
+  background-color: black;
+  height: 150px;
+
+}
+
+.redes-sociales{
+  width: 30%;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+
+
+footer .redes-sociales a{
+	color:white;
+	border-radius: 50%;
+	background-color: black;
+	font-size: 32px;
+	font-weight: bold;
+	height: 50px;
+	width: 50px;
+
+}
+
+footer p{
+	color: white;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+}
 
 /*ESTILOS PARA MÓVIL*/
-@media(max-width: 400px){
+@media(max-width: 600px){
 		
 	header{
-		padding-top: 0;
+		padding:0;
 	}
 	header nav{
       display:flex;
@@ -125,16 +201,14 @@ header nav{
 	 	color: white;
 	 	text-decoration: none;
 	 	font-weight: bold;
-	 	margin-left: 5px;
-	 	margin-right: 5px;
-	 	padding: 5px 10px;
-	 	border-radius: 5px;
-	 	background-color: rgba(0 , 0 , 0 , 0.5);
+	 	margin:auto;
+	 	border-radius: 0;
+	 	background-color: rgba(255, 255 , 255 , 0);
      }
 
      header nav a:hover{
      	width: 100%;
-     	text-align: center;;
+     	text-align: center;
      	background-color: red;
      }
 
@@ -159,12 +233,33 @@ header nav{
 		margin:0;
     }
 
-	#yo{
+	#yo, #perfil, #habilidades{
 		flex-direction: column;
 		-webkit-flex-direction:column;
 	}
-
-	section .imagen-yo{
+		
+	section .imagen-yo, section .imagen-perfil{
 		order: 1;
+	}
+
+     #habilidades .box{
+		margin: 0 auto;	
+		width: 100%;
+		
+	}
+
+    /*.redes-sociales{
+    	float: left;
+    }*/
+	footer{
+		height: 200px;
+		overflow: auto;
+	}
+
+	footer p {
+		font-size: 22px;
+		width: 70%;
+		margin: 10px auto;
+		text-align: center;
 	}
 }
